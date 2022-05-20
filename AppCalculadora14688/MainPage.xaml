@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCalculadora14688.MainPage">
+
+    <StackLayout Padding="8,8,8,8">
+        
+            <Label Text="" x:Name="lblNumero" FontSize="35" HorizontalTextAlignment="End"/>
+        
+
+        <Grid RowDefinitions="*,*,*,*,*" ColumnDefinitions="*,*,*,*,*" BackgroundColor="DarkViolet" VerticalOptions="FillAndExpand">
+            
+            <Button Text="7" FontSize="35" x:Name="btn7" Grid.Row="0" Grid.Column="0" Clicked="btn7_Clicked"/>
+
+            <Button Text="8" FontSize="35"  x:Name="btn8" Grid.Row="0" Grid.Column="1" Clicked="btn8_Clicked"/>
+
+            <Button Text="9" FontSize="35"  x:Name="btn9" Grid.Row="0" Grid.Column="2" Clicked="btn9_Clicked"/>
+
+            <Button Text="/" FontSize="35"  x:Name="btnDividir" Grid.Row="0" Grid.Column="3" Clicked="btnDividir_Clicked"/>
+
+            <Button Text="C" FontSize="35"  x:Name="btnLimpar" Grid.Row="0" Grid.Column="4" Clicked="btnLimpar_Clicked"/>
+
+            <Button Text="4" FontSize="35"  x:Name="btn4" Grid.Row="1" Grid.Column="0" Clicked="btn4_Clicked"/>
+
+            <Button Text="5" FontSize="35"  x:Name="btn5" Grid.Row="1" Grid.Column="1" Clicked="btn5_Clicked"/>
+
+            <Button Text="6" FontSize="35"  x:Name="btn6" Grid.Row="1" Grid.Column="2" Clicked="btn6_Clicked"/>
+
+            <Button Text="X" FontSize="35"  x:Name="btnMultiplicar" Grid.Row="1" Grid.Column="3" Clicked="btnMultiplicar_Clicked"/>
+
+            <Button Text="+" FontSize="35"  x:Name="btnSomar" Grid.Row="1" Grid.Column="4" Clicked="btnSomar_Clicked" Grid.RowSpan="2"/>
+
+            <Button Text="1" FontSize="35"  x:Name="btn1" Grid.Row="2" Grid.Column="0" Clicked="btn1_Clicked"/>
+
+            <Button Text="2" FontSize="35"  x:Name="btn2" Grid.Row="2" Grid.Column="1" Clicked="btn2_Clicked"/>
+
+            <Button Text="3" FontSize="35"  x:Name="btn3" Grid.Row="2" Grid.Column="2" Clicked="btn3_Clicked"/>
+
+            <Button Text="-" FontSize="35"  x:Name="btnSubtrair" Grid.Row="2" Grid.Column="3" Clicked="btnSubtrair_Clicked"/>
+
+            <Button Text="0" FontSize="35"  x:Name="btn0" Grid.Row="3" Grid.Column="0" Clicked="btn0_Clicked" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+
+            <Button Text="," FontSize="35"  x:Name="btnVirgula" Grid.Row="3" Grid.Column="2" Clicked="btnVirgula_Clicked" Grid.RowSpan="2"/>
+
+            <Button Text="=" FontSize="35"  x:Name="btnIgual" Grid.Row="3" Grid.Column="3" Clicked="btnIgual_Clicked" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+
+        </Grid>
+
+        <Label Text="" x:Name="lblMensagemDeErro" TextColor="Red"/>
+
+    </StackLayout>
+
+</ContentPage>
